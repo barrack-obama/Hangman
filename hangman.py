@@ -59,7 +59,7 @@ class Hangman:
                 self.wrong_letters.append(letter) # add the letter in the list so they don't make the same mistake
             
             # if there's no letters left to be found, the user wins.
-            if "".join(this.hangman) == self.chosen_word:
+            if "".join(self.hangman) == self.chosen_word:
                 print(" ".join(self.hangman))
                 print("You've won!")
                 break
@@ -70,7 +70,7 @@ class Hangman:
                 break
 
             # print out the wrong letters when there are any
-            if this.wrong_letters:
+            if self.wrong_letters:
                     print("All wrong letters: ", ", ".join(self.wrong_letters))
 
             continue # lesss goooooooo
